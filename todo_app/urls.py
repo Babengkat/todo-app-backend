@@ -6,5 +6,5 @@ router = DefaultRouter()
 router.register(r'tasks', TaskViewSet)  # This will create routes for CRUD operations
 
 urlpatterns = [
-    path('api/', include(router.urls)),  # API base URL: /api/tasks/
+    path('api/tasks/', include(router.urls)),  # API base URL: /api/tasks/
 ]
